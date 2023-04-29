@@ -22,6 +22,12 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
+Capybara.configure do |config|
+  config.alway_include_port = true
+  config.default_max_wait_time = 10
+  config.default_driver = :selenium_chrome_headless
+end
+
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 # Checks for pending migrations and applies them before tests are run.
