@@ -70,6 +70,8 @@ group :development do
   gem 'rubocop-rspec', '~> 2.20', require: false
 
   gem 'overcommit', '~> 0.60.0', require: false
+
+  gem 'brakeman', '~> 5.4', '>= 5.4.1', require: false
 end
 
 group :test do
