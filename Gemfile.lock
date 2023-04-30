@@ -85,7 +85,10 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     concurrent-ruby (1.2.2)
+    connection_pool (2.4.0)
     crass (1.0.6)
+    cssbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.7.2)
       irb (>= 1.5.0)
@@ -113,6 +116,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsbundling-rails (1.1.1)
+      railties (>= 6.0.0)
     json (2.6.3)
     loofah (2.20.0)
       crass (~> 1.0.2)
@@ -238,6 +243,10 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sidekiq (6.5.8)
+      connection_pool (>= 2.2.5, < 3)
+      rack (~> 2.0)
+      redis (>= 4.5.0, < 5)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -281,11 +290,13 @@ DEPENDENCIES
   bootsnap
   brakeman (~> 5.4, >= 5.4.1)
   capybara
+  cssbundling-rails (~> 1.1, >= 1.1.2)
   debug
   factory_bot_rails (~> 6.2)
   faker (~> 3.2)
   importmap-rails
   jbuilder
+  jsbundling-rails (~> 1.1)
   overcommit (~> 0.60.0)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
@@ -297,6 +308,7 @@ DEPENDENCIES
   rubocop-rails (~> 2.19, >= 2.19.1)
   rubocop-rspec (~> 2.20)
   selenium-webdriver
+  sidekiq (< 7)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
