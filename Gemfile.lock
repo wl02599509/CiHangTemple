@@ -85,6 +85,7 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     concurrent-ruby (1.2.2)
+    connection_pool (2.4.0)
     crass (1.0.6)
     cssbundling-rails (1.1.2)
       railties (>= 6.0.0)
@@ -242,6 +243,10 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sidekiq (6.5.8)
+      connection_pool (>= 2.2.5, < 3)
+      rack (~> 2.0)
+      redis (>= 4.5.0, < 5)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -303,6 +308,7 @@ DEPENDENCIES
   rubocop-rails (~> 2.19, >= 2.19.1)
   rubocop-rspec (~> 2.20)
   selenium-webdriver
+  sidekiq (< 7)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
