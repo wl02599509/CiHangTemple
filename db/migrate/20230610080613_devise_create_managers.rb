@@ -34,7 +34,8 @@ class DeviseCreateManagers < ActiveRecord::Migration[7.0]
 
       t.string :name
       t.string :email
-      t.datetime :birthday
+      t.string :phone
+      t.datetime :birth_date
       t.string :address
 
       t.timestamps null: false

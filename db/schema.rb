@@ -24,7 +24,8 @@ ActiveRecord::Schema[7.0].define(version: 20_230_610_080_613) do
     t.datetime 'remember_created_at'
     t.string 'name'
     t.string 'email'
-    t.datetime 'birthday'
+    t.string 'phone'
+    t.datetime 'birth_date'
     t.string 'address'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
