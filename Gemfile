@@ -94,3 +94,6 @@ gem 'jsbundling-rails', '~> 1.1'
 gem 'sidekiq', '< 7'
 
 gem 'devise', '~> 4.9'
+
+gem 'i18n', '~> 1.14', '>= 1.14.1'
+gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
