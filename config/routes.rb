@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :managers, class_name: "Admin::Manager"
+
   root "home#index"
 
   namespace 'admin' do
