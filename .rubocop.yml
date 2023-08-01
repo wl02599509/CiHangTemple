@@ -21,6 +21,9 @@ AllCops:
     - lib/devise/models/validatable.rb
 Rails:
   Enabled: true
+Layout/LineLength:
+  Exclude:
+    - config/initializers/devise.rb
 Metrics/AbcSize:
   Exclude:
     - app/controllers/admin/managers/sessions_controller.rb
