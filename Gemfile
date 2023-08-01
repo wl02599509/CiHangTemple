@@ -73,6 +73,8 @@ group :development do
   gem 'rubocop-performance', '~> 1.18', require: false
   gem 'rubocop-rails', '~> 2.20', '>= 2.20.2', require: false
   gem 'rubocop-rspec', '~> 2.23', require: false
+
+  gem 'overcommit', '~> 0.60.0'
 end
 
 group :test do
