@@ -1,10 +1,12 @@
-Rails.application.routes.draw do
-  devise_for :managers, class_name: "Admin::Manager"
+# frozen_string_literal: true
 
-  root "home#index"
+Rails.application.routes.draw do
+  devise_for :managers, class_name: 'Admin::Manager'
+
+  root 'home#index'
 
   namespace 'admin' do
-    get '/home', to: "home#index"
+    get '/home', to: 'home#index'
 
     resources 'managers'
   end
