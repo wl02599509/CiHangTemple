@@ -4,7 +4,11 @@ class DeviseCreateAdminManagers < ActiveRecord::Migration[7.0]
   def change
     create_table :admin_managers do |t|
       ## Database authenticatable
-      t.string :id_card_number    , null: false, default: "", unique: true
+      t.string :id_card_number,     null: false
+      t.string :email,              null: false
+      t.string :name,               null: false
+      t.string :address,            null: false
+      t.datetime :birth_date,       null: false
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
@@ -32,15 +36,12 @@ class DeviseCreateAdminManagers < ActiveRecord::Migration[7.0]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-      t.string :name
-      t.string :email,              null: false, default: ""
-      t.datetime :birth_date
-      t.string :address
 
       t.timestamps null: false
     end
 
-    add_index :admin_managers, :email,                unique: true
+    add_index :admin_managers, :id_card_number,       unique: true
+    add_index :admin_managers, :email, unique: true
     add_index :admin_managers, :reset_password_token, unique: true
     # add_index :admin_managers, :confirmation_token,   unique: true
     # add_index :admin_managers, :unlock_token,         unique: true
