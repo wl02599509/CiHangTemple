@@ -13,6 +13,13 @@
   <body class="flex justify-center items-center">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%# TODO: 另外用 view_component 做有無登入的顯示狀態 %>
+    <% if current_manager %>
+      <%= current_manager.name %>
+      <%= link_to '登出', destroy_manager_session_path, data: { turbo_method: 'delete' } %>
+    <% else %>
+      <%= link_to '登入', new_manager_session_path %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
