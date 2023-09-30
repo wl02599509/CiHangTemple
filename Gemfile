@@ -85,3 +85,6 @@ group :test do
 end
 
 gem 'devise', '~> 4.9', '>= 4.9.2'
+
+gem 'rails-i18n', '~> 7.0', '>= 7.0.8'
+gem "devise-i18n"

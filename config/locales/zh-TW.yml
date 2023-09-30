@@ -1,0 +1,26 @@
+zh-TW:
+  activerecord:
+    attributes:
+      admin/manager:
+          id_card_number: 身份證字號
+          email: 電子信箱
+          name: 姓名
+          address: 戶籍地址
+          birth_date: 國曆出生年月日
+          password: 密碼
+          password_confirmation: 確認密碼
+  devise:
+    managers:
+      sessions:
+        new:
+          managers_sign_in: 管理人員登入
+          sign_in: 登入
+          remember_me: 記住我的帳號密碼
+      shared:
+        links:
+          sign_in: 登入
+          sign_up: 註冊
+          forgot_your_password: 忘記密碼?
+
+
+        
