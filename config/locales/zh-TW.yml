@@ -16,6 +16,11 @@ zh-TW:
           managers_sign_in: 管理人員登入
           sign_in: 登入
           remember_me: 記住我的帳號密碼
+      registrations:
+        new:
+          managers_sign_up: 管理人員註冊帳號
+          sign_up: 註冊
+          characters_minimum: 長度最少 %{length} 字元
       shared:
         links:
           sign_in: 登入
