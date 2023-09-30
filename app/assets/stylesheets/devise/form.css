@@ -1,6 +1,30 @@
+.entire_form {
+  @apply flex flex-col;
+  @apply gap-y-5;
+  @apply p-5;
+  @apply bg-yellow-200;
+  @apply rounded-xl;
+  @apply shadow-md;
+}
+
+.form_title {
+  @apply m-auto; 
+  @apply text-2xl;
+}
+
+.form_helper {
+  @apply flex flex-col;
+  @apply gap-y-3;
+}
+
 .field {
   @apply flex justify-between gap-x-2;
   @apply text-lg;
+}
+
+.field_input {
+  @apply border border-red-300;
+  @apply rounded-md;
 }
 
 .button {
