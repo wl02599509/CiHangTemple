@@ -4,4 +4,4 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/screens";
 
-@import './devise/column.css';
+@import './devise/form.css';
