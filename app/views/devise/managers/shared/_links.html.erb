@@ -1,5 +1,9 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to t('.sign_in'), new_session_path(resource_name) %>
+  <div>
+    <span class='pr-2'>已有帳號?</span>
+    <span>請</span>
+    <%= link_to t('.sign_in'), new_session_path(resource_name), class: 'button' %>
+  </div>
 <% end %>
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
