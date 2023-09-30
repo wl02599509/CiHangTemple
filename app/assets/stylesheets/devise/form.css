@@ -1,0 +1,11 @@
+.field {
+  @apply flex justify-between gap-x-2;
+  @apply text-lg;
+}
+
+.button {
+  @apply px-3 py-1;
+  @apply border border-black;
+  @apply rounded-lg;
+  @apply hover:bg-blue-200 hover:cursor-pointer active:bg-blue-100
+}
