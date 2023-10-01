@@ -12,11 +12,10 @@ WORKDIR ${ROOT}
 FROM ruby:3.1.3 
 
 WORKDIR ${ROOT}
+  COPY . ${ROOT}
   COPY --from=build ${ROOT}/ ${ROOT}/
 
 ENV RAILS_ENV=production
-
-COPY . ${ROOT}
 
 EXPOSE 3000
 
