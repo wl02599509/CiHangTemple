@@ -24,6 +24,7 @@
 
 .field_input {
   @apply border border-red-300;
+  @apply py-1 px-2;
   @apply rounded-md;
 }
 
