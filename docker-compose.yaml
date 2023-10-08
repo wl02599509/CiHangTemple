@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  rails:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - net
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:16-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+     - 5432:5432
+    networks:
+      - net
+    environment:
+      - POSTGRES_DB=CiHangTemple_production
+      - POSTGRES_USER=CiHangTemple
+      - POSTGRES_PASSWORD=CiHangTemple
+volumes:
+  postgres_data:
+networks:
+  net:
