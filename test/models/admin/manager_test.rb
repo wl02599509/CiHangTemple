@@ -1,7 +1,11 @@
-require "test_helper"
+# frozen_string_literal: true
 
-class Admin::ManagerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+require 'test_helper'
+
+module Admin
+  class ManagerTest < ActiveSupport::TestCase
+    # test "the truth" do
+    #   assert true
+    # end
+  end
 end

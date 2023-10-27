@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :managers, class_name: "Admin::Manager", controllers: {
+  devise_for :managers, class_name: 'Admin::Manager', controllers: {
     sessions: 'devise/managers/sessions',
     registrations: 'devise/managers/registrations'
   }
