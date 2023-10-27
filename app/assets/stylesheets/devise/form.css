@@ -2,7 +2,7 @@
   @apply flex flex-col;
   @apply gap-y-5;
   @apply p-5;
-  @apply bg-yellow-200;
+  @apply bg-blue-200;
   @apply rounded-xl;
   @apply shadow-md;
 }
@@ -32,5 +32,5 @@
   @apply px-3 py-1;
   @apply border border-black;
   @apply rounded-lg;
-  @apply hover:bg-blue-200 hover:cursor-pointer active:bg-blue-100
+  @apply hover:bg-blue-400 hover:cursor-pointer active:bg-blue-100
 }
