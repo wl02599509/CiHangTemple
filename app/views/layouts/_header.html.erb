@@ -1,5 +1,11 @@
 <nav class='flex justify-between items-center w-full py-3 px-6 bg-blue-200'>
   <h1 class='text-3xl font-medium tracking-widest'>三芝港口慈航宮</h1>
+  <ul class='flex items-center gap-x-20'>
+    <li class='px-2 py-1 hover:border-2 hover:border-red-400 hover:cursor-pointer'>會員管理</li>
+    <li class='px-2 py-1 hover:border-2 hover:border-red-400 hover:cursor-pointer'>信眾管理</li>
+    <li class='px-2 py-1 hover:border-2 hover:border-red-400 hover:cursor-pointer'>聖物管理</li>
+    <li class='px-2 py-1 hover:border-2 hover:border-red-400 hover:cursor-pointer'>行程管理</li>
+  </ul>
   <div>
     <% if current_manager %>
       <%= current_manager.name %>
