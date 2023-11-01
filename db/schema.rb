@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_31_131957) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_01_154319) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "admin_managers", force: :cascade do |t|
+  create_table "admin_members", force: :cascade do |t|
     t.string "id_card_number", null: false
     t.string "email", null: false
     t.string "name", null: false
@@ -26,9 +26,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_31_131957) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_admin_managers_on_email", unique: true
-    t.index ["id_card_number"], name: "index_admin_managers_on_id_card_number", unique: true
-    t.index ["reset_password_token"], name: "index_admin_managers_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_admin_members_on_email", unique: true
+    t.index ["id_card_number"], name: "index_admin_members_on_id_card_number", unique: true
+    t.index ["reset_password_token"], name: "index_admin_members_on_reset_password_token", unique: true
   end
 
 end

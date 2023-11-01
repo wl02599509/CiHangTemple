@@ -7,11 +7,11 @@
     <li class='px-2 py-1 hover:border-2 hover:border-red-400 hover:cursor-pointer'>行程管理</li>
   </ul>
   <div>
-    <% if current_manager %>
-      <%= current_manager.name %>
-      <%= link_to '登出', destroy_manager_session_path, data: { turbo_method: 'delete' } %>
+    <% if current_member %>
+      <%= current_member.name %>
+      <%= link_to '登出', destroy_member_session_path, data: { turbo_method: 'delete' } %>
     <% elsif !request.controller_class.to_s.include?('Devise') %>
-      <%= link_to '登入', new_manager_session_path %>
+      <%= link_to '登入', new_member_session_path %>
     <% end %>
   </div>
 </nav>
