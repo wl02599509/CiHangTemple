@@ -26,7 +26,7 @@ Layout/LineLength:
     - config/initializers/devise.rb
 Metrics/AbcSize:
   Exclude:
-    - app/controllers/admin/managers/sessions_controller.rb
+    - app/controllers/admin/members/sessions_controller.rb
 Metrics/BlockLength:
   Exclude:
     - config/routes.rb

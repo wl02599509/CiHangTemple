@@ -2,6 +2,6 @@
 
 module Admin
   class ApplicationController < ApplicationController
-    before_action :authenticate_manager!
+    before_action :authenticate_member!
   end
 end

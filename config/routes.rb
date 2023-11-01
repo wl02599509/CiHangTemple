@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :managers, class_name: 'Admin::Manager', controllers: {
-    sessions: 'devise/managers/sessions',
-    registrations: 'devise/managers/registrations'
+  devise_for :members, class_name: 'Admin::Member', controllers: {
+    sessions: 'devise/members/sessions',
+    registrations: 'devise/members/registrations'
   }
-  # devise_for :managers, controllers: {
-  #   sessions: 'managers/sessions'
+  # devise_for :members, controllers: {
+  #   sessions: 'members/sessions'
   # }
   root 'home#index'
 

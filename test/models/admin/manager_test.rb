@@ -3,7 +3,7 @@
 require 'test_helper'
 
 module Admin
-  class ManagerTest < ActiveSupport::TestCase
+  class MemberTest < ActiveSupport::TestCase
     # test "the truth" do
     #   assert true
     # end

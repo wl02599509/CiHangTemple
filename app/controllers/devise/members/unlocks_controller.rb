@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Devise
-  module Managers
+  module Members
     class UnlocksController < Devise::UnlocksController
       # GET /resource/unlock/new
       # def new

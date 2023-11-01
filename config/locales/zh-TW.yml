@@ -1,7 +1,7 @@
 zh-TW:
   activerecord:
     attributes:
-      admin/manager:
+      admin/member:
           id_card_number: 身份證字號
           email: 電子信箱
           name: 姓名
@@ -10,15 +10,15 @@ zh-TW:
           password: 密碼
           password_confirmation: 確認密碼
   devise:
-    managers:
+    members:
       sessions:
         new:
-          managers_sign_in: 管理人員登入
+          members_sign_in: 管理人員登入
           sign_in: 登入
           remember_me: 記住我的帳號密碼
       registrations:
         new:
-          managers_sign_up: 管理人員註冊帳號
+          members_sign_up: 管理人員註冊帳號
           sign_up: 註冊
           characters_minimum: 長度最少 %{length} 字元
       shared:
