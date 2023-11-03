@@ -15,6 +15,11 @@
     </div>
 
     <div class="field">
+      <%= f.label :phone %>
+      <%= f.phone_field :phone, autofocus: true, autocomplete: "phone", class: 'field_input' %>
+    </div>
+
+    <div class="field">
       <%= f.label :name %>
       <%= f.text_field :name, autofocus: true, autocomplete: "name", class: 'field_input' %>
     </div>
