@@ -11,7 +11,7 @@
   </t-head>
   <t-body>
     <% @members.each do |member| %>
-      <tr class='border border-b-slate-400 text-center'>
+      <tr class='border border-b-slate-400 text-center even:bg-red-100'>
         <td class='py-2'><%= member.name %></td>
         <td><%= member.id_card_number %></td>
         <td><%= member.birth_date.strftime('%Y-%m-%d') %></td>
@@ -22,3 +22,4 @@
     <% end %>
   </t-body>
 </table>
+<%== pagy_nav(@pagy) if @pagy.pages > 1 %>
