@@ -1,6 +1,6 @@
-<table>
+<table class="shadow-lg">
   <t-head>
-    <tr class='border border-b-black'>
+    <tr class='border-b border-b-black'>
       <td class='py-4 px-8 text-center'>姓名</td>
       <td class='p-4 text-center'>身分證字號</td>
       <td class='p-4 text-center'>出生年月日</td>
@@ -11,7 +11,7 @@
   </t-head>
   <t-body>
     <% @members.each do |member| %>
-      <tr class='border border-b-slate-400 text-center even:bg-red-100'>
+      <tr class='text-center even:bg-red-100'>
         <td class='py-2'><%= member.name %></td>
         <td><%= member.id_card_number %></td>
         <td><%= member.birth_date.strftime('%Y-%m-%d') %></td>
