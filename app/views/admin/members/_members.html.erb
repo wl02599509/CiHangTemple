@@ -1,0 +1,28 @@
+<table class="shadow-lg">
+  <t-head>
+    <tr class='border-b border-b-black'>
+      <td class='py-4 px-8 text-center'>姓名</td>
+      <td class='p-4 text-center'>身分證字號</td>
+      <td class='p-4 text-center'>出生年月日</td>
+      <td class='px-10 text-center'>電話</td>
+      <td class='px-20 text-center'>電子信箱</td>
+      <td class='px-40 text-center'>地址</td>
+    </td>
+  </t-head>
+  <t-body>
+    <% members.each do |member| %>
+      <tr class='text-center even:bg-red-100'>
+        <td class='py-2'><%= member.name %></td>
+        <td><%= member.id_card_number %></td>
+        <td><%= member.birth_date.strftime('%Y-%m-%d') %></td>
+        <td><%= member.phone %></td>
+        <td> <%= member.email %></td>
+        <td> <%= member.address %></td>
+      </tr>
+    <% end %>
+  </t-body>
+</table>
+
+<div class='flex justify-center mt-4'>
+  <%== pagy_nav(pagy) if pagy.pages > 1 %>
+</div>

@@ -5,4 +5,5 @@
 @import "tailwindcss/screens";
 
 @import './devise/form.css';
-@import './pagy.css'
+@import './members/pagy.css';
+@import './members/new.css'

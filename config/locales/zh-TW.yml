@@ -9,6 +9,14 @@ zh-TW:
           birth_date: 國曆出生年月日
           password: 密碼
           password_confirmation: 確認密碼
+  admin:
+    members:
+      index:
+        new_members: 建立會員資料
+        search_members: 查詢會員資料
+      new:
+        new_member: 建立會員
+        create_members: 建立資料
   devise:
     members:
       sessions:
