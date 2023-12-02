@@ -4,7 +4,7 @@
 }
 
 .new-members-form {
-  @apply flex flex-col;
+  @apply flex flex-col w-full;
   @apply gap-y-3;
 }
 .new-members-field {

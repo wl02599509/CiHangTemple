@@ -1,0 +1,30 @@
+.table-header {
+  @apply grid grid-cols-9;
+}
+
+.table-cols {
+  @apply text-center;
+
+  &.name {
+    @apply col-span-1;
+  }
+  &.id-card-number {
+    @apply col-span-1;
+  }
+  &.birth-date {
+    @apply col-span-1;
+  }
+  &.phone {
+    @apply col-span-1;
+  }
+  &.email {
+    @apply col-span-2;
+  }
+  &.address {
+    @apply col-span-2;
+  }
+  &.actions {
+    @apply items-center justify-center;
+    @apply col-span-1;
+  }
+}

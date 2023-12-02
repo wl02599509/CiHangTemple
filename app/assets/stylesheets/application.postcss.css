@@ -4,6 +4,8 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/screens";
 
-@import './devise/form.css';
+@import './form.css';
+@import './members/index.css';
 @import './members/pagy.css';
-@import './members/new.css'
+@import './members/new.css';
+@import './members/edit.css';

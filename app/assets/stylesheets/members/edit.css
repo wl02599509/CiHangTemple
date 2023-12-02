@@ -1,0 +1,24 @@
+.edit-members-form {
+  @apply items-center justify-center;
+}
+
+.edit-members-field {
+  @apply w-full;
+}
+
+.edit-member-input-field {
+  @apply w-full;
+  @apply text-center;
+}
+
+.edit-members-error {
+  @apply text-right;
+  @apply text-red-500;
+}
+
+.edit-members-button {
+  @apply py-2 px-2;
+  @apply cursor-pointer;
+  @apply hover:bg-orange-300 hover:rounded;
+}
+
