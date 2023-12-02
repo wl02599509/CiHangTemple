@@ -92,3 +92,5 @@ gem 'devise-i18n'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.8'
 
 gem 'pagy', '~> 6.1'
+
+gem 'view_component', '~> 3.8'
