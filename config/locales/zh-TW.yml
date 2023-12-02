@@ -17,6 +17,15 @@ zh-TW:
       new:
         new_member: 建立會員
         create_members: 建立資料
+      edit_form:
+        submit: 更新
+        cancel: 取消
+      update:
+        success: 更新會員資料成功
+
+    # view_components
+    member_table_column_component:
+      edit_member: 編輯
   devise:
     members:
       sessions:
@@ -34,6 +43,7 @@ zh-TW:
           sign_in: 登入
           sign_up: 註冊
           forgot_your_password: 忘記密碼?
+  component:
 
 
         
