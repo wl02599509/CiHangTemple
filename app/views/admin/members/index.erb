@@ -1,7 +1,10 @@
 <div class="flex gap-x-4">
-  <%= link_to t('.new_members'), new_admin_member_path, class: 'px-3 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700' %>
+  <%= link_to t('.new_members'), new_admin_member_path, data: { turbo_frame: 'members_section' }, class: 'px-3 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700' %>
   <!-- TODO:search -->
   <%= link_to t('.search_members'), '#', class: 'px-3 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700' %>
 </div>
 
-<%= render 'members', members: @members, pagy: @pagy %>
+<%= turbo_frame_tag 'members_section' do %>
+  <%= render 'members', members: @members, pagy: @pagy %>
+<% end %>
+

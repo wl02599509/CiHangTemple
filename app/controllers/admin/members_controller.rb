@@ -20,7 +20,7 @@ module Admin
       @member = Admin::Member.new(member_params)
       member = @member.save
 
-      redirect_to admin_members_path if member
+      return redirect_to admin_members_path if member
 
       render :new
     end
