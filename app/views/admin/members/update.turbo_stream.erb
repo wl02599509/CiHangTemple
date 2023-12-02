@@ -1,0 +1,3 @@
+<%= turbo_stream.update dom_id(@member) do %>
+  <%= render(Admin::MemberTableColumnComponent.new(@member)) %>
+<% end %>

@@ -1,0 +1,37 @@
+<%= form_with model: @member, class: 'edit-members-form table-header' do |f| %>
+
+  <div class='table-cols name'>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class: 'field_input edit-member-input-field' %>
+    <span class="edit-members-error"><%= @member.errors[:name].join('; ') %></span>
+  </div>
+
+  <div class='table-cols id-card-number'>
+    <%= f.text_field :id_card_number, autofocus: true, autocomplete: "id_card_number", class: 'field_input edit-member-input-field' %>
+    <span class="edit-members-error"><%= @member.errors[:id_card_number].join(';') %></span>
+  </div>
+
+  <span class='table-cols birth-date'>
+    <%= f.date_field :birth_date, autofocus: true, autocomplete: "birth_date", class: 'field_input edit-member-input-field' %>
+    <span class="edit-members-error"><%= @member.errors[:birth_date].join('; ') %></span>
+  </span>
+
+  <span class='table-cols phone'>
+    <%= f.phone_field :phone, autofocus: true, autocomplete: "phone", class: 'field_input edit-member-input-field' %>
+    <span class="edit-members-error"><%= @member.errors[:phone].join('; ') %></span>
+  </span>
+
+  <span class='table-cols email'>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'field_input edit-member-input-field' %>
+    <span class="edit-members-error"><%= @member.errors[:email].join(';') %></span>
+  </span>
+
+  <span class='table-cols address'>
+    <%= f.text_field :address, autofocus: true, autocomplete: "address", class: 'field_input edit-member-input-field' %>
+    <span class="edit-members-error"><%= @member.errors[:address].join('; ') %></span>
+  </span>
+
+  <div class='table-cols actions flex gap-x-2 '>
+    <%= f.submit t('.submit'), class: 'edit-members-button' %>
+    <div class='edit-members-button'><%= t('.cancel') %></div>
+  </div>
+<% end %>
