@@ -22,10 +22,15 @@ zh-TW:
         cancel: 取消
       update:
         success: 更新會員資料成功
+      destroy:
+        success: '已刪除%{name}會員資料'
 
     # view_components
     member_table_column_component:
       edit_member: 編輯
+      delete_member: 刪除
+      are_you_sure_to_delete?: 你確定要刪除嗎?
+
   devise:
     members:
       sessions:

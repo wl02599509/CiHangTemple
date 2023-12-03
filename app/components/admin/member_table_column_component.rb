@@ -10,10 +10,18 @@ module Admin
         <div class='table-cols phone'><%= @member.phone %></div>
         <div class='table-cols email'><%= @member.email %></div>
         <div class='table-cols address'><%= @member.address %></div>
-        <div class='table-cols actions'>
+        <div class='table-cols actions flex'>
           <%= link_to t('.edit_member'),
               edit_admin_member_path(@member),
-              class: 'py-2 px-2 hover:bg-orange-300 hover:rounded' %>
+              class: 'py-2 px-2 hover:bg-orange-300 hover:rounded'
+          %>
+          <%= button_to t('.delete_member'),
+              admin_member_path(@member),
+              method: :delete,
+              form: {
+                data: { turbo_confirm: t('.are_you_sure_to_delete?') }
+              }
+          %>
         </div>
       </div>
     ERB
