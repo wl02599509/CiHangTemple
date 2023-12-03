@@ -4,7 +4,7 @@ module Admin
   class MembersController < ApplicationController
     include Pagy::Backend
 
-    before_action :find_member, only: %i[edit update]
+    before_action :find_member, only: %i[edit update destroy]
 
     PERMITTED_ATTR = %i[name id_card_number email
                         phone address birth_date
@@ -37,6 +37,15 @@ module Admin
         end
       else
         render action: :update_failed
+      end
+    end
+
+    def destroy
+      @member.destroy
+
+      respond_to do |format|
+        format.html { redirect_to admin_members_path, notice: t('.success', name: @member.name) }
+        format.turbo_stream
       end
     end
 
