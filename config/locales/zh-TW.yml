@@ -1,9 +1,14 @@
 zh-TW:
+  invalid_phone: 電話號碼格式不符
+  invalid_email: 電子信箱格式不符
+  invalid_id_card_number: 身分證格式不符
+
   activerecord:
     attributes:
       admin/member:
           id_card_number: 身份證字號
           email: 電子信箱
+          phone: 手機號碼
           name: 姓名
           address: 戶籍地址
           birth_date: 國曆出生年月日

@@ -7,7 +7,7 @@
         <%= f.label :id_card_number %>
         <%= f.text_field :id_card_number, autofocus: true, autocomplete: "id_card_number", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:id_card_number].join(';') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :id_card_number) %></div>
     </div>
 
     <div>
@@ -15,7 +15,7 @@
         <%= f.label :email %>
         <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:email].join(';') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :email) %></div>
     </div>
 
     <div>
@@ -23,7 +23,7 @@
         <%= f.label :phone %>
         <%= f.phone_field :phone, autofocus: true, autocomplete: "phone", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:phone].join('; ') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :phone) %></div>
     </div>
 
     <div>
@@ -31,7 +31,7 @@
         <%= f.label :name %>
         <%= f.text_field :name, autofocus: true, autocomplete: "name", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:name].join('; ') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :name) %></div>
     </div>
 
     <div>
@@ -39,7 +39,7 @@
         <%= f.label :address %>
         <%= f.text_field :address, autofocus: true, autocomplete: "address", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:address].join('; ') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :address) %></div>
     </div>
 
     <div>
@@ -47,7 +47,7 @@
         <%= f.label :birth_date %>
         <%= f.date_field :birth_date, autofocus: true, autocomplete: "birth_date", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:birth_date].join('; ') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :birth_date) %></div>
     </div>
 
     <div>
@@ -58,7 +58,7 @@
         <% end %>
         <%= f.password_field :password, autocomplete: "new-password", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:password].join('; ') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :password) %></div>
     </div>
 
     <div>
@@ -66,7 +66,7 @@
         <%= f.label :password_confirmation %>
         <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'field_input' %>
       </div>
-      <div class="new-members-error"><%= @member.errors[:password_confirmation].join('; ') %></div>
+      <div class="new-members-error"><%= invalid_msg(@member, :password_confirmation) %></div>
     </div>
 
     <%= f.submit t('.create_members'), class: 'new-members-button' %>
