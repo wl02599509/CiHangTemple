@@ -268,6 +268,8 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
+    taiwanese_id_validator (0.0.2)
+      activemodel
     thor (1.2.2)
     timeout (0.4.1)
     turbo-rails (1.5.0)
@@ -329,6 +331,7 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
+  taiwanese_id_validator
   turbo-rails
   tzinfo-data
   view_component (~> 3.8)
