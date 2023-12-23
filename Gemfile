@@ -58,6 +58,10 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   gem 'faker', '~> 3.2', '>= 3.2.2'
+
+  gem 'rspec-rails', '~> 6.1'
+
+  gem 'factory_bot_rails', '~> 6.4', '>= 6.4.2'
 end
 
 group :development do
