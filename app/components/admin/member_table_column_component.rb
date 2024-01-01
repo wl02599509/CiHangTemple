@@ -18,6 +18,7 @@ module Admin
           <%= button_to t('.delete_member'),
               admin_member_path(@member),
               method: :delete,
+              class: 'py-2 px-2 hover:bg-red-500 hover:text-white hover:rounded',
               form: {
                 data: { turbo_confirm: t('.are_you_sure_to_delete?') }
               }
